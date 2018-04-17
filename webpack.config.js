@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require(`html-webpack-plugin`);
+const WebpackAnalyzerPlugin = require(`webpack-bundle-analyzer`).BundleAnalyzerPlugin;
 const PnpWebpackPlugin = require(`./scripts/webpack-resolver`);
 
 module.exports = {
@@ -35,7 +36,8 @@ module.exports = {
     },
 
     plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin(),
+        new WebpackAnalyzerPlugin(),
     ]
 
 };

@@ -26,6 +26,7 @@
         "jest": "23.0.0-alpha.6r",
         "jest-environment-jsdom": "23.0.0-alpha.6r",
         "webpack": "^4.4.1",
+        "webpack-bundle-analyzer": "^2.11.1",
         "webpack-cli": "^2.0.13",
         "webpack-stream": "^4.0.3"
     },
