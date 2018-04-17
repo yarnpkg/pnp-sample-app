@@ -1,4 +1,8 @@
-import {fibonacci} from '../fibonacci';
+import 'rxjs/add/operator/take';
+import 'rxjs/add/operator/toArray';
+
+import {toPromise}                      from 'rxjs/operators';
+import {fibonacci, fibonacciObservable} from '../fibonacci';
 
 describe(`fibonacci`, () => {
   it(`should work for negative values`, () => {
@@ -32,5 +36,15 @@ describe(`fibonacci`, () => {
 
   it(`should return +Infinity for +Infinity`, () => {
     expect(fibonacci(+Infinity)).toEqual(+Infinity);
+  });
+});
+
+describe(`fibonacciObservable`, () => {
+  it(`should return the initial term as first value`, async () => {
+    await expect(fibonacciObservable(10).take(1).toPromise()).resolves.toEqual(55);
+  });
+
+  it(`should work with multiple terms`, async () => {
+    await expect(fibonacciObservable(1).take(6).toArray().toPromise()).resolves.toEqual([1, 1, 2, 3, 5, 8]);
   });
 });

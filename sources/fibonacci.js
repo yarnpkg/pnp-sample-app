@@ -1,3 +1,5 @@
+import {from} from 'rxjs/observable/from';
+
 export function fibonacci(n) {
   if (n === -Infinity) return -Infinity;
 
@@ -13,4 +15,20 @@ export function fibonacci(n) {
   if (res <= 0) res -= 1;
 
   return res;
+}
+
+export function* fibonacciGenerator(startingFrom) {
+  let nM1 = fibonacci(startingFrom - 1);
+  let nM0 = fibonacci(startingFrom);
+
+  while (true) {
+    let pM1 = nM1;
+    nM1 = nM0;
+    nM0 = nM0 + pM1;
+    yield nM1;
+  }
+}
+
+export function fibonacciObservable(startingFrom) {
+    return from(fibonacciGenerator(startingFrom));
 }
