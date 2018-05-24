@@ -23,8 +23,8 @@
         "gulp-uglify": "^3.0.0",
         "html-webpack-plugin": "^3.1.0",
         "http-server": "^0.11.1",
-        "jest-environment-jsdom": "23.0.0-alpha.7",
         "jest": "23.0.0-alpha.7",
+        "jest-environment-jsdom": "23.0.0-alpha.7",
         "regenerator-runtime": "^0.11.1",
         "rxjs": "^5.5.10",
         "webpack": "^4.4.1",
@@ -39,5 +39,8 @@
     },
     "resolutions": {
         "jest-config": "23.0.0-alpha.7"
+    },
+    "installConfig": {
+        "pnp": true
     }
 }
