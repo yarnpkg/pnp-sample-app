@@ -37,7 +37,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin(),
-        new WebpackAnalyzerPlugin(),
+//      new WebpackAnalyzerPlugin(),
     ]
 
 };
