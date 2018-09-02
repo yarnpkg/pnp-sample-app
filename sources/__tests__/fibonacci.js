@@ -1,7 +1,8 @@
 import 'rxjs/add/operator/take';
 import 'rxjs/add/operator/toArray';
 
-import {toPromise}                      from 'rxjs/operators';
+// eslint-disable-next-line
+import {toPromise} from 'rxjs/operators';
 import {fibonacci, fibonacciObservable} from '../fibonacci';
 
 describe(`fibonacci`, () => {
@@ -41,10 +42,19 @@ describe(`fibonacci`, () => {
 
 describe(`fibonacciObservable`, () => {
   it(`should return the initial term as first value`, async () => {
-    await expect(fibonacciObservable(10).take(1).toPromise()).resolves.toEqual(55);
+    await expect(
+      fibonacciObservable(10)
+        .take(1)
+        .toPromise(),
+    ).resolves.toEqual(55);
   });
 
   it(`should work with multiple terms`, async () => {
-    await expect(fibonacciObservable(1).take(6).toArray().toPromise()).resolves.toEqual([1, 1, 2, 3, 5, 8]);
+    await expect(
+      fibonacciObservable(1)
+        .take(6)
+        .toArray()
+        .toPromise(),
+    ).resolves.toEqual([1, 1, 2, 3, 5, 8]);
   });
 });

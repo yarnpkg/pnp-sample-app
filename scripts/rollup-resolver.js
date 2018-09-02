@@ -2,7 +2,9 @@ let pnp;
 
 try {
   pnp = require(`../.pnp.js`);
-} catch (error) {}
+} catch (error) {
+  // not a problem
+}
 
 module.exports = () => ({
   name: `pnp`,
@@ -20,5 +22,5 @@ module.exports = () => ({
     }
 
     return pnp.resolveRequest(importee, importer);
-  }
+  },
 });

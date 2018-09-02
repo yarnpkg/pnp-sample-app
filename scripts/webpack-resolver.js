@@ -2,7 +2,9 @@ let pnp;
 
 try {
   pnp = require(`../.pnp.js`);
-} catch (error) {}
+} catch (error) {
+  // not a problem
+}
 
 module.exports = {
   apply: function(resolver) {
@@ -35,9 +37,15 @@ module.exports = {
         return callback(error);
       }
 
-      resolver.doResolve(resolvedHook, Object.assign({}, request, {
-        path: resolution,
-      }), null, resolveContext, callback);
+      resolver.doResolve(
+        resolvedHook,
+        Object.assign({}, request, {
+          path: resolution,
+        }),
+        null,
+        resolveContext,
+        callback,
+      );
     });
-  }
+  },
 };

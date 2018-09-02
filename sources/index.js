@@ -19,7 +19,7 @@ class Application extends React.PureComponent {
   render() {
     return (
       <div>
-        Everything is working just fine! And as a bonus, here's a fibonacci number calculator:
+        Everything is working just fine! And as a bonus, here′s a fibonacci number calculator:
         <div style={{marginTop: 10}}>
           <input value={this.state.n} onChange={this.handleChange} />
           <input value={fibonacci(parseInt(this.state.n, 10) || 1)} readOnly={true} />
