@@ -13,3 +13,7 @@ The packages currently configured are:
   - React
   - Uglifyjs
   - Webpack
+
+## Known Issues
+
+  - ESLint doesn't work w/ eslint-plugin-import because of https://github.com/babel/babel-eslint/issues/680
