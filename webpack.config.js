@@ -4,7 +4,7 @@ const PnpWebpackPlugin = require(`./scripts/webpack-resolver`);
 
 module.exports = {
 
-    mode: `production`,
+    mode: `development`,
 
     entry: {
         [`app`]: `./sources/index.js`,
@@ -12,6 +12,12 @@ module.exports = {
 
     output: {
         filename: `[name].js`,
+    },
+
+    devtool: false,
+
+    optimization: {
+        sideEffects: true,
     },
 
     module: {

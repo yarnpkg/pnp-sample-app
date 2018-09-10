@@ -1,6 +1,7 @@
 import {autobind} from 'core-decorators';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {a, b} from 'webpack-big-module-with-flag';
 
 import {fibonacci} from './fibonacci';
 

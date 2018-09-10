@@ -1,0 +1,5 @@
+{
+    "name": "webpack-big-module-with-flag",
+    "version": "0.0.0",
+    "sideEffects": false
+}
