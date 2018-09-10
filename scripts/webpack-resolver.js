@@ -12,8 +12,8 @@ module.exports = {
       return;
     }
 
-    const resolvedHook = resolver.ensureHook(`resolved`);
-    resolver.getHook(`resolve`).tapAsync(`PnpResolver`, (request, resolveContext, callback) => {
+    const resolvedHook = resolver.ensureHook(`module`);
+    resolver.getHook(`raw-module`).tapAsync(`PnpResolver`, (request, resolveContext, callback) => {
       if (request.context.issuer === undefined) {
         return callback();
       }
@@ -30,7 +30,7 @@ module.exports = {
       }
 
       try {
-        resolution = pnp.resolveRequest(request.request, issuer);
+        resolution = pnp.resolveToUnqualified(request.request, issuer);
       } catch (error) {
         // TODO This is not good! But the `debug` package tries to require `supports-color` without declaring it in its
         // package.json, and Webpack accepts this because it`s in a try/catch, so we need to do it as well.
