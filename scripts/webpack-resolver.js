@@ -14,15 +14,13 @@ module.exports = {
 
     const resolvedHook = resolver.ensureHook(`module`);
     resolver.getHook(`raw-module`).tapAsync(`PnpResolver`, (request, resolveContext, callback) => {
-      if (request.context.issuer === undefined) {
-        return callback();
-      }
-
       let issuer;
       let resolution;
 
+      // When using require.context, issuer seems to be false (cf https://github.com/webpack/webpack-dev-server/blob/d0725c98fb752d8c0b1e8c9067e526e22b5f5134/client-src/default/index.js#L94)
       if (!request.context.issuer) {
         issuer = `${request.path}/`;
+      // Otherwise, if the issuer provided by Webpack is a valid absolute path, then we can use it as our issuer
       } else if (request.context.issuer.startsWith(`/`)) {
         issuer = request.context.issuer;
       } else {
@@ -32,8 +30,6 @@ module.exports = {
       try {
         resolution = pnp.resolveToUnqualified(request.request, issuer);
       } catch (error) {
-        // TODO This is not good! But the `debug` package tries to require `supports-color` without declaring it in its
-        // package.json, and Webpack accepts this because it`s in a try/catch, so we need to do it as well.
         return callback(error);
       }
 
