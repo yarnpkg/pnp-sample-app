@@ -19,6 +19,7 @@ The packages currently configured are:
   - React
   - Uglifyjs
   - Webpack
+  - Webpack-dev-server
 
 ## Known Issues
 
