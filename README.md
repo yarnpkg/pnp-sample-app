@@ -20,7 +20,9 @@ The packages currently configured are:
   - Uglifyjs
   - Webpack
   - Webpack-dev-server
+  - Standard.js
 
 ## Known Issues
 
   - ESLint doesn't work w/ eslint-plugin-import because of https://github.com/babel/babel-eslint/issues/680
+  - Standard.js doesn't work because of https://github.com/babel/babel-eslint/issues/680 either
