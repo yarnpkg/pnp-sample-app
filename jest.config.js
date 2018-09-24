@@ -1,3 +1,3 @@
 module.exports = {
-    resolver: './scripts/jest-resolver',
+    resolver: require.resolve(`jest-pnp-resolver`)
 };
