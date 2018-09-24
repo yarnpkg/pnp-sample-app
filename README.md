@@ -6,6 +6,14 @@ This app showcase a wide range of popular packages, and show that Plug'n'play ha
 
 Running `yarn install` in the root directory will automatically use the Plug'n'Play-enabled build checked inside the repository. To try out the project without Plug'n'Play enabled, just run `YARN_PLUGNPLAY_OVERRIDE=0 yarn install` instead.
 
+## Plugins
+
+A few plugins are needed for various build tools to properly understand how to resolve files. Those are the ones we use:
+
+  - [jest-pnp-resolver](https://github.com/arcanis/jest-pnp-resolver)
+  - [rollup-plugin-pnp-resolve](https://github.com/arcanis/rollup-plugin-pnp-resolve)
+  - [pnp-webpack-plugin](https://github.com/arcanis/pnp-webpack-plugin)
+
 ## Packages
 
 The packages currently configured are:
