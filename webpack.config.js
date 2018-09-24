@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require(`html-webpack-plugin`);
+const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
 const WebpackAnalyzerPlugin = require(`webpack-bundle-analyzer`).BundleAnalyzerPlugin;
-const PnpWebpackPlugin = require(`./scripts/webpack-resolver`);
 
 module.exports = {
 
@@ -14,11 +14,12 @@ module.exports = {
         filename: `[name].js`,
     },
 
+
     module: {
         rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: require.resolve('babel-loader'),
+            loader: 'babel-loader',
             options: {},
         }]
     },
@@ -31,7 +32,7 @@ module.exports = {
 
     resolveLoader: {
         plugins: [
-            PnpWebpackPlugin,
+            PnpWebpackPlugin.moduleLoader(module),
         ]
     },
 
