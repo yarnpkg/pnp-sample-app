@@ -8145,6 +8145,11 @@ rollup-plugin-commonjs@^9.1.6:
     resolve "^1.5.0"
     rollup-pluginutils "^2.0.1"
 
+rollup-plugin-pnp-resolve@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-pnp-resolve/-/rollup-plugin-pnp-resolve-1.0.0.tgz#62dc6fdb37c876c93a5ab1f67785e92316ff7acd"
+  integrity sha512-rhkgaQA5JHn/LPjOCEOh9tqkyunNhhbL856Go31npClTbEFrbBP9dcx9bxJcxNfTEvs8jT8NCzSLls3yQRjpnA==
+
 rollup-pluginutils@^2.0.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.3.1.tgz#760d185ccc237dedc12d7ae48c6bcd127b4892d0"

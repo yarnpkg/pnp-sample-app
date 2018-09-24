@@ -1,5 +1,5 @@
 const commonjs = require(`rollup-plugin-commonjs`);
-const resolve = require(`./scripts/rollup-resolver`);
+const resolve = require(`rollup-plugin-pnp-resolve`);
 
 module.exports = {
   input: `sources/fibonacci.js`,
