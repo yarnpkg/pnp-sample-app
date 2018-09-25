@@ -1,0 +1,346 @@
+{
+  "path_prefix": "/",
+  "packages": {
+    "babel-runtime": {
+      "path": "../Library/Caches/Yarn/v3/npm-babel-runtime-6.26.0-965c7058668e82b55d7bfe04ff2337bc8b5647fe/node_modules/babel-runtime"
+    },
+    "core-decorators": {
+      "path": "../Library/Caches/Yarn/v3/npm-core-decorators-0.20.0-605896624053af8c28efbe735c25a301a61c65c5/node_modules/core-decorators",
+      "main": "lib/core-decorators.js"
+    },
+    "lodash": {
+      "path": "../Library/Caches/Yarn/v3/npm-lodash-4.17.5-99a92d65c0272debe8c96b6057bc8fbfa3bed511/node_modules/lodash",
+      "main": "lodash.js"
+    },
+    "react": {
+      "path": "../Library/Caches/Yarn/v3/npm-react-16.3.2-fdc8420398533a1e58872f59091b272ce2f91ea9/node_modules/react",
+      "main": "index.js"
+    },
+    "react-dom": {
+      "path": "../Library/Caches/Yarn/v3/npm-react-dom-16.3.2-cb90f107e09536d683d84ed5d4888e9640e0e4df/node_modules/react-dom",
+      "main": {
+        "./server.js": "./server.browser.js"
+      }
+    }
+  },
+  "scopes": {
+    "../Library/Caches/Yarn/v3/npm-babel-runtime-6.26.0-965c7058668e82b55d7bfe04ff2337bc8b5647fe/node_modules/babel-runtime": {
+      "packages": {
+        "core-js": {
+          "path": "../../../npm-core-js-2.5.5-b14dde936c640c0579a6b50cabcc132dd6127e3b/node_modules/core-js",
+          "main": "index.js"
+        },
+        "regenerator-runtime": {
+          "path": "../../../npm-regenerator-runtime-0.11.1-be05ad7f9bf7d22e056f9726cee5017fbf19e2e9/node_modules/regenerator-runtime",
+          "main": "runtime-module.js"
+        },
+        "babel-runtime": {
+          "path": "./"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-core-js-2.5.5-b14dde936c640c0579a6b50cabcc132dd6127e3b/node_modules/core-js": {
+      "packages": {
+        "core-js": {
+          "path": "./",
+          "main": "index.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-regenerator-runtime-0.11.1-be05ad7f9bf7d22e056f9726cee5017fbf19e2e9/node_modules/regenerator-runtime": {
+      "packages": {
+        "regenerator-runtime": {
+          "path": "./",
+          "main": "runtime-module.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-core-decorators-0.20.0-605896624053af8c28efbe735c25a301a61c65c5/node_modules/core-decorators": {
+      "packages": {
+        "core-decorators": {
+          "path": "./",
+          "main": "lib/core-decorators.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-lodash-4.17.5-99a92d65c0272debe8c96b6057bc8fbfa3bed511/node_modules/lodash": {
+      "packages": {
+        "lodash": {
+          "path": "./",
+          "main": "lodash.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-react-16.3.2-fdc8420398533a1e58872f59091b272ce2f91ea9/node_modules/react": {
+      "packages": {
+        "fbjs": {
+          "path": "../../../npm-fbjs-0.8.16-5e67432f550dc41b572bf55847b8aca64e5337db/node_modules/fbjs",
+          "main": "index.js"
+        },
+        "loose-envify": {
+          "path": "../../../npm-loose-envify-1.3.1-d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848/node_modules/loose-envify",
+          "main": "index.js"
+        },
+        "object-assign": {
+          "path": "../../../npm-object-assign-4.1.1-2109adc7965887cfc05cbbd442cac8bfbb360863/node_modules/object-assign"
+        },
+        "prop-types": {
+          "path": "../../../npm-prop-types-15.6.1-36644453564255ddda391191fb3a125cbdf654ca/node_modules/prop-types",
+          "main": "index.js"
+        },
+        "react": {
+          "path": "./",
+          "main": "index.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-fbjs-0.8.16-5e67432f550dc41b572bf55847b8aca64e5337db/node_modules/fbjs": {
+      "packages": {
+        "core-js": {
+          "path": "../../../npm-core-js-1.2.7-652294c14651db28fa93bd2d5ff2983a4f08c636/node_modules/core-js",
+          "main": "index.js"
+        },
+        "isomorphic-fetch": {
+          "path": "../../../npm-isomorphic-fetch-2.2.1-611ae1acf14f5e81f729507472819fe9733558a9/node_modules/isomorphic-fetch",
+          "main": "fetch-npm-browserify.js"
+        },
+        "loose-envify": {
+          "path": "../../../npm-loose-envify-1.3.1-d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848/node_modules/loose-envify",
+          "main": "index.js"
+        },
+        "object-assign": {
+          "path": "../../../npm-object-assign-4.1.1-2109adc7965887cfc05cbbd442cac8bfbb360863/node_modules/object-assign"
+        },
+        "promise": {
+          "path": "../../../npm-promise-7.3.1-064b72602b18f90f29192b8b1bc418ffd1ebd3bf/node_modules/promise",
+          "main": "index.js"
+        },
+        "setimmediate": {
+          "path": "../../../npm-setimmediate-1.0.5-290cbb232e306942d7d7ea9b83732ab7856f8285/node_modules/setimmediate",
+          "main": "setImmediate.js"
+        },
+        "ua-parser-js": {
+          "path": "../../../npm-ua-parser-js-0.7.17-e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac/node_modules/ua-parser-js",
+          "main": "src/ua-parser.js"
+        },
+        "fbjs": {
+          "path": "./",
+          "main": "index.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-core-js-1.2.7-652294c14651db28fa93bd2d5ff2983a4f08c636/node_modules/core-js": {
+      "packages": {
+        "core-js": {
+          "path": "./",
+          "main": "index.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-isomorphic-fetch-2.2.1-611ae1acf14f5e81f729507472819fe9733558a9/node_modules/isomorphic-fetch": {
+      "packages": {
+        "node-fetch": {
+          "path": "../../../npm-node-fetch-1.7.3-980f6f72d85211a5347c6b2bc18c5b84c3eb47ef/node_modules/node-fetch",
+          "main": "index.js"
+        },
+        "whatwg-fetch": {
+          "path": "../../../npm-whatwg-fetch-2.0.4-dde6a5df315f9d39991aa17621853d720b85566f/node_modules/whatwg-fetch",
+          "main": "fetch.js"
+        },
+        "isomorphic-fetch": {
+          "path": "./",
+          "main": "fetch-npm-browserify.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-node-fetch-1.7.3-980f6f72d85211a5347c6b2bc18c5b84c3eb47ef/node_modules/node-fetch": {
+      "packages": {
+        "encoding": {
+          "path": "../../../npm-encoding-0.1.12-538b66f3ee62cd1ab51ec323829d1f9480c74beb/node_modules/encoding",
+          "main": "lib/encoding.js"
+        },
+        "is-stream": {
+          "path": "../../../npm-is-stream-1.1.0-12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44/node_modules/is-stream"
+        },
+        "node-fetch": {
+          "path": "./",
+          "main": "index.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-encoding-0.1.12-538b66f3ee62cd1ab51ec323829d1f9480c74beb/node_modules/encoding": {
+      "packages": {
+        "iconv-lite": {
+          "path": "../../../npm-iconv-lite-0.4.21-c47f8733d02171189ebc4a400f3218d348094798/node_modules/iconv-lite",
+          "main": {
+            "./lib/extend-node": false,
+            "./lib/streams": false
+          }
+        },
+        "encoding": {
+          "path": "./",
+          "main": "lib/encoding.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-iconv-lite-0.4.21-c47f8733d02171189ebc4a400f3218d348094798/node_modules/iconv-lite": {
+      "packages": {
+        "safer-buffer": {
+          "path": "../../../npm-safer-buffer-2.1.2-44fa161b0187b9549dd84bb91802f9bd8385cd6a/node_modules/safer-buffer",
+          "main": "safer.js"
+        },
+        "iconv-lite": {
+          "path": "./",
+          "main": {
+            "./lib/extend-node": false,
+            "./lib/streams": false
+          }
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-safer-buffer-2.1.2-44fa161b0187b9549dd84bb91802f9bd8385cd6a/node_modules/safer-buffer": {
+      "packages": {
+        "safer-buffer": {
+          "path": "./",
+          "main": "safer.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-is-stream-1.1.0-12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44/node_modules/is-stream": {
+      "packages": {
+        "is-stream": {
+          "path": "./"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-whatwg-fetch-2.0.4-dde6a5df315f9d39991aa17621853d720b85566f/node_modules/whatwg-fetch": {
+      "packages": {
+        "whatwg-fetch": {
+          "path": "./",
+          "main": "fetch.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-loose-envify-1.3.1-d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848/node_modules/loose-envify": {
+      "packages": {
+        "js-tokens": {
+          "path": "../../../npm-js-tokens-3.0.2-9866df395102130e38f7f996bceb65443209c25b/node_modules/js-tokens"
+        },
+        "loose-envify": {
+          "path": "./",
+          "main": "index.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-js-tokens-3.0.2-9866df395102130e38f7f996bceb65443209c25b/node_modules/js-tokens": {
+      "packages": {
+        "js-tokens": {
+          "path": "./"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-object-assign-4.1.1-2109adc7965887cfc05cbbd442cac8bfbb360863/node_modules/object-assign": {
+      "packages": {
+        "object-assign": {
+          "path": "./"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-promise-7.3.1-064b72602b18f90f29192b8b1bc418ffd1ebd3bf/node_modules/promise": {
+      "packages": {
+        "asap": {
+          "path": "../../../npm-asap-2.0.6-e50347611d7e690943208bbdafebcbc2fb866d46/node_modules/asap",
+          "main": {
+            "./asap": "./browser-asap.js",
+            "./asap.js": "./browser-asap.js",
+            "./raw": "./browser-raw.js",
+            "./raw.js": "./browser-raw.js",
+            "./test/domain.js": "./test/browser-domain.js"
+          }
+        },
+        "promise": {
+          "path": "./",
+          "main": "index.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-asap-2.0.6-e50347611d7e690943208bbdafebcbc2fb866d46/node_modules/asap": {
+      "packages": {
+        "asap": {
+          "path": "./",
+          "main": {
+            "./asap": "./browser-asap.js",
+            "./asap.js": "./browser-asap.js",
+            "./raw": "./browser-raw.js",
+            "./raw.js": "./browser-raw.js",
+            "./test/domain.js": "./test/browser-domain.js"
+          }
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-setimmediate-1.0.5-290cbb232e306942d7d7ea9b83732ab7856f8285/node_modules/setimmediate": {
+      "packages": {
+        "setimmediate": {
+          "path": "./",
+          "main": "setImmediate.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-ua-parser-js-0.7.17-e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac/node_modules/ua-parser-js": {
+      "packages": {
+        "ua-parser-js": {
+          "path": "./",
+          "main": "src/ua-parser.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-prop-types-15.6.1-36644453564255ddda391191fb3a125cbdf654ca/node_modules/prop-types": {
+      "packages": {
+        "fbjs": {
+          "path": "../../../npm-fbjs-0.8.16-5e67432f550dc41b572bf55847b8aca64e5337db/node_modules/fbjs",
+          "main": "index.js"
+        },
+        "loose-envify": {
+          "path": "../../../npm-loose-envify-1.3.1-d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848/node_modules/loose-envify",
+          "main": "index.js"
+        },
+        "object-assign": {
+          "path": "../../../npm-object-assign-4.1.1-2109adc7965887cfc05cbbd442cac8bfbb360863/node_modules/object-assign"
+        },
+        "prop-types": {
+          "path": "./",
+          "main": "index.js"
+        }
+      }
+    },
+    "../Library/Caches/Yarn/v3/npm-react-dom-16.3.2-cb90f107e09536d683d84ed5d4888e9640e0e4df/node_modules/react-dom": {
+      "packages": {
+        "fbjs": {
+          "path": "../../../npm-fbjs-0.8.16-5e67432f550dc41b572bf55847b8aca64e5337db/node_modules/fbjs",
+          "main": "index.js"
+        },
+        "loose-envify": {
+          "path": "../../../npm-loose-envify-1.3.1-d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848/node_modules/loose-envify",
+          "main": "index.js"
+        },
+        "object-assign": {
+          "path": "../../../npm-object-assign-4.1.1-2109adc7965887cfc05cbbd442cac8bfbb360863/node_modules/object-assign"
+        },
+        "prop-types": {
+          "path": "../../../npm-prop-types-15.6.1-36644453564255ddda391191fb3a125cbdf654ca/node_modules/prop-types",
+          "main": "index.js"
+        },
+        "react": {
+          "path": "../../../npm-react-16.3.2-fdc8420398533a1e58872f59091b272ce2f91ea9/node_modules/react",
+          "main": "index.js"
+        },
+        "react-dom": {
+          "path": "./",
+          "main": {
+            "./server.js": "./server.browser.js"
+          }
+        }
+      }
+    }
+  }
+}
