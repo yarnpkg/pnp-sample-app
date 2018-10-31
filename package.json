@@ -3,6 +3,7 @@
     "dependencies": {
         "babel-runtime": "^6.26.0",
         "core-decorators": "^0.20.0",
+        "lint-staged": "^7.3.0",
         "lodash": "^4.17.5",
         "react": "^16.2.0",
         "react-dom": "^16.2.0"
@@ -53,7 +54,8 @@
         "prettier": "prettier --write sources/**/*.js scripts/**/*.js",
         "rollup": "rollup -c",
         "serve": "http-server -c-1 dist",
-        "webpack": "webpack"
+        "webpack": "webpack",
+        "precommit": "lint-staged"
     },
     "resolutions": {
         "fsevents": "npm:dummypkg-a@1.0.0"
