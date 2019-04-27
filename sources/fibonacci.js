@@ -30,5 +30,5 @@ export function* fibonacciGenerator(startingFrom) {
 }
 
 export function fibonacciObservable(startingFrom) {
-    return from(fibonacciGenerator(startingFrom));
+  return from(fibonacciGenerator(startingFrom));
 }

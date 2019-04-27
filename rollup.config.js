@@ -8,7 +8,11 @@ module.exports = {
     format: `cjs`,
   },
   plugins: [
-    commonjs(),
+    commonjs({
+      namedExports: {
+        'rxjs/observable/from': ['from'],
+      },
+    }),
     resolve(),
-  ]
+  ],
 };
