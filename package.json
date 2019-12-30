@@ -41,7 +41,7 @@
         "rollup-plugin-pnp-resolve": "^1.0.0",
         "rxjs": "^5.5.10",
         "webpack": "^4.4.1",
-        "webpack-bundle-analyzer": "^2.11.1",
+        "webpack-bundle-analyzer": "^3.3.2",
         "webpack-cli": "^2.0.13",
         "webpack-dev-server": "^3.1.11",
         "webpack-stream": "^4.0.3"
